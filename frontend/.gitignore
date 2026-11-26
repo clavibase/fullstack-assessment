@@ -1,0 +1,23 @@
+# Nuxt
+.nuxt
+.output
+.nitro
+.cache
+dist
+.data
+
+# Dependencies
+node_modules
+
+# Lockfiles from other package managers
+package-lock.json
+yarn.lock
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Logs / OS
+*.log
+.DS_Store

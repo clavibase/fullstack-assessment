@@ -1,0 +1,36 @@
+# Dependencies
+vendor/
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Laravel
+database.sqlite
+*.sqlite
+*.sqlite-journal
+backend/public/build
+backend/public/hot
+backend/public/storage
+backend/storage/*.key
+backend/bootstrap/cache/*.php
+
+# Nuxt
+.nuxt/
+.output/
+.nitro/
+.cache/
+dist/
+
+# Tooling and OS
+.phpunit.result.cache
+.phpunit.cache
+.phpactor.json
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+.cursor/

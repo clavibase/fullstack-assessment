@@ -88,10 +88,32 @@ The Nuxt 4 placeholder is at `http://localhost:3000`. `NUXT_PUBLIC_API_BASE` (de
 
 ## Candidate notes
 
-Replace this section before you submit.
-
 ### Setup steps
+
+- Installed backend dependencies using Composer.
+- Configured the Laravel application with SQLite and seeded the database.
+- Installed frontend dependencies using pnpm.
+- Started the Laravel API on `http://localhost:8000` and the Nuxt frontend on `http://localhost:3000`.
+- Configured the frontend to communicate with the backend through Nuxt runtime configuration.
 
 ### Decisions made
 
+- Used Laravel API resource routes to implement property CRUD operations.
+- Implemented filtering by area, minimum price (`min`), maximum price (`max`), and number of bedrooms.
+- Added pagination with a configurable page size, capped at 50 records.
+- Used a consistent JSON response structure with pagination metadata.
+- Added request validation when creating and updating properties.
+- Built a responsive Nuxt 4 listing page with loading states, error handling, empty states, filter controls, and pagination.
+- Used the existing property model, migration, and seeder instead of introducing unnecessary database changes.
+
+### Stretch goal
+
+Skipped the optional stretch goals to focus on completing and verifying the core requirements.
+
 ### What you'd improve with more time
+
+- Add automated feature tests for CRUD operations, filtering, validation, and pagination.
+- Improve the property cards with actual listing images.
+- Add stronger validation for filter query parameters.
+- Introduce sorting options and more advanced search functionality.
+- Improve API documentation and error response consistency.
